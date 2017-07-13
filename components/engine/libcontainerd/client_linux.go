@@ -3,7 +3,6 @@ package libcontainerd
 import (
 	"fmt"
 	"os"
-	"path/filepath"
 	"strings"
 	"sync"
 	"syscall"
@@ -12,7 +11,6 @@ import (
 	"github.com/Sirupsen/logrus"
 	containerd "github.com/containerd/containerd/api/grpc/types"
 	containerd_runtime_types "github.com/containerd/containerd/runtime"
-	"github.com/crosbymichael/upgrade/v17_06_1"
 	"github.com/docker/docker/pkg/ioutils"
 	"github.com/docker/docker/pkg/mount"
 	"github.com/golang/protobuf/ptypes"
@@ -330,14 +328,6 @@ func (clnt *client) restore(cont *containerd.Container, lastEvent *containerd.Ev
 	containerID := cont.Id
 	if _, err := clnt.getContainer(containerID); err == nil {
 		return fmt.Errorf("container %s is already active", containerID)
-	}
-
-	if errUpgrade := v17_06_1.Upgrade(
-		filepath.Join(runcStateDir, containerID, runcStateFilename),
-		filepath.Join(cont.BundlePath, configFilename),
-		filepath.Join(clnt.remote.stateDir, containerdStateDir, containerID, containerdInitDir, processFilename),
-	); errUpgrade != nil {
-		logrus.Warnf("libcontainerd: could not upgrade state files during live restore for container %s: %v", containerID, err)
 	}
 
 	defer func() {

@@ -137,27 +137,28 @@ func New(stateDir string, options ...RemoteOption) (_ Remote, err error) {
 }
 
 func (r *remote) makeUpgradeProof() {
-	f, err := os.Open(runcStateDir)
+	dir := filepath.Join(r.stateDir, containerdStateDir)
+	f, err := os.Open(dir)
 	if err != nil {
-		logrus.Warnf("libcontainerd: makeUpgradeProof could not find %s", runcStateDir)
+		logrus.Warnf("libcontainerd: makeUpgradeProof could not open %s", dir)
 		return
 	}
 	fis, err := f.Readdir(0)
 	if err != nil {
-		logrus.Warnf("libcontainerd: makeUpgradeProof could not read directory entries in %s", runcStateDir)
+		logrus.Warnf("libcontainerd: makeUpgradeProof could not read directory entries in %s", dir)
 		f.Close()
 		return
 	}
-	ids := make([]string, len(fis))
+	containerIds := make([]string, len(fis))
 	for i, fi := range fis {
-		ids[i] = fi.Name()
+		containerIds[i] = fi.Name()
 	}
 	f.Close()
-	for _, id := range ids {
+	for _, id := range containerIds {
 		if err := v17_06_1.Upgrade(
 			filepath.Join(runcStateDir, id, runcStateFilename),
 			filepath.Join(r.stateDir, id, configFilename),
-			filepath.Join(r.stateDir, containerdStateDir, id, containerdInitDir, processFilename),
+			filepath.Join(dir, id, containerdInitDir, processFilename),
 		); err != nil {
 			logrus.Warnf("libcontainerd: could not upgrade state files during live restore for container %s: %v", id, err)
 		}
