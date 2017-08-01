@@ -8,7 +8,7 @@ import (
 	"os"
 	"strings"
 
-	"github.com/docker/docker/pkg/ioutils"
+	"github.com/moby/moby-core/pkg/ioutils"
 )
 
 type file struct {
@@ -20,9 +20,9 @@ type file struct {
 
 func Upgrade(runcState, containerdConfig, containerdProcess string) error {
 	files := []*file{
-		&file{name: runcState, x: new(State)},
-		&file{name: containerdConfig, x: new(Spec)},
-		&file{name: containerdProcess, x: new(ProcessState)},
+		{name: runcState, x: new(State)},
+		{name: containerdConfig, x: new(Spec)},
+		{name: containerdProcess, x: new(ProcessState)},
 	}
 	for _, f := range files {
 		fd, err := os.Open(f.name)
