@@ -11,15 +11,15 @@ import (
 	"syscall"
 	"testing"
 
-	"github.com/docker/docker/api/types/swarm"
-	dcli "github.com/docker/docker/cli"
-	"github.com/docker/docker/integration-cli/cli"
-	"github.com/docker/docker/integration-cli/cli/build/fakestorage"
-	"github.com/docker/docker/integration-cli/daemon"
-	"github.com/docker/docker/integration-cli/environment"
-	"github.com/docker/docker/integration-cli/registry"
-	"github.com/docker/docker/pkg/reexec"
 	"github.com/go-check/check"
+	"github.com/moby/moby-core/api/types/swarm"
+	dcli "github.com/moby/moby-core/cli"
+	"github.com/moby/moby-core/integration-cli/cli"
+	"github.com/moby/moby-core/integration-cli/cli/build/fakestorage"
+	"github.com/moby/moby-core/integration-cli/daemon"
+	"github.com/moby/moby-core/integration-cli/environment"
+	"github.com/moby/moby-core/integration-cli/registry"
+	"github.com/moby/moby-core/pkg/reexec"
 )
 
 const (

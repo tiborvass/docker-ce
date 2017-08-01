@@ -7,8 +7,8 @@ import (
 	"os"
 	"path/filepath"
 
-	containertypes "github.com/docker/docker/api/types/container"
-	"github.com/docker/docker/pkg/system"
+	containertypes "github.com/moby/moby-core/api/types/container"
+	"github.com/moby/moby-core/pkg/system"
 )
 
 const (

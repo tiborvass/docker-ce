@@ -5,10 +5,10 @@ import (
 	"fmt"
 	"strings"
 
-	types "github.com/docker/docker/api/types/swarm"
-	"github.com/docker/docker/pkg/namesgenerator"
 	swarmapi "github.com/docker/swarmkit/api"
 	gogotypes "github.com/gogo/protobuf/types"
+	types "github.com/moby/moby-core/api/types/swarm"
+	"github.com/moby/moby-core/pkg/namesgenerator"
 )
 
 var (

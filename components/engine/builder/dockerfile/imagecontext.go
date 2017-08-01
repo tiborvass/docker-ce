@@ -5,10 +5,10 @@ import (
 	"strings"
 
 	"github.com/Sirupsen/logrus"
-	"github.com/docker/docker/api/types/backend"
-	"github.com/docker/docker/api/types/container"
-	"github.com/docker/docker/builder"
-	"github.com/docker/docker/builder/remotecontext"
+	"github.com/moby/moby-core/api/types/backend"
+	"github.com/moby/moby-core/api/types/container"
+	"github.com/moby/moby-core/builder"
+	"github.com/moby/moby-core/builder/remotecontext"
 	"github.com/pkg/errors"
 	"golang.org/x/net/context"
 )

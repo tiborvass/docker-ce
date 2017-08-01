@@ -4,11 +4,11 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/docker/docker/pkg/plugingetter"
 	"github.com/docker/libnetwork/ipamapi"
 	"github.com/docker/swarmkit/api"
 	"github.com/docker/swarmkit/manager/allocator/networkallocator"
 	"github.com/docker/swarmkit/manager/state/store"
+	"github.com/moby/moby-core/pkg/plugingetter"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/codes"
 )

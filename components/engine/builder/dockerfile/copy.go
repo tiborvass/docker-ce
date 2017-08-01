@@ -11,14 +11,14 @@ import (
 	"strings"
 	"time"
 
-	"github.com/docker/docker/builder"
-	"github.com/docker/docker/builder/remotecontext"
-	"github.com/docker/docker/pkg/httputils"
-	"github.com/docker/docker/pkg/ioutils"
-	"github.com/docker/docker/pkg/progress"
-	"github.com/docker/docker/pkg/streamformatter"
-	"github.com/docker/docker/pkg/system"
-	"github.com/docker/docker/pkg/urlutil"
+	"github.com/moby/moby-core/builder"
+	"github.com/moby/moby-core/builder/remotecontext"
+	"github.com/moby/moby-core/pkg/httputils"
+	"github.com/moby/moby-core/pkg/ioutils"
+	"github.com/moby/moby-core/pkg/progress"
+	"github.com/moby/moby-core/pkg/streamformatter"
+	"github.com/moby/moby-core/pkg/system"
+	"github.com/moby/moby-core/pkg/urlutil"
 	"github.com/pkg/errors"
 )
 

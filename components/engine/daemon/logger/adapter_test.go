@@ -10,8 +10,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/docker/docker/api/types/plugins/logdriver"
 	protoio "github.com/gogo/protobuf/io"
+	"github.com/moby/moby-core/api/types/plugins/logdriver"
 )
 
 // mockLoggingPlugin implements the loggingPlugin interface for testing purposes

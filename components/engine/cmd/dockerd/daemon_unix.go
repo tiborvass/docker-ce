@@ -11,10 +11,10 @@ import (
 	"strconv"
 	"syscall"
 
-	"github.com/docker/docker/cmd/dockerd/hack"
-	"github.com/docker/docker/daemon"
-	"github.com/docker/docker/libcontainerd"
 	"github.com/docker/libnetwork/portallocator"
+	"github.com/moby/moby-core/cmd/dockerd/hack"
+	"github.com/moby/moby-core/daemon"
+	"github.com/moby/moby-core/libcontainerd"
 )
 
 const defaultDaemonConfigFile = "/etc/docker/daemon.json"

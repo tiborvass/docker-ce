@@ -5,8 +5,8 @@ import (
 	"net/http"
 	"regexp"
 
-	"github.com/docker/docker/integration-cli/registry"
 	"github.com/go-check/check"
+	"github.com/moby/moby-core/integration-cli/registry"
 )
 
 // unescapeBackslashSemicolonParens unescapes \;()

@@ -9,7 +9,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/docker/docker/pkg/mount"
+	"github.com/moby/moby-core/pkg/mount"
 )
 
 func TestGetAddress(t *testing.T) {

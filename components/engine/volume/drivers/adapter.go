@@ -6,7 +6,7 @@ import (
 	"strings"
 
 	"github.com/Sirupsen/logrus"
-	"github.com/docker/docker/volume"
+	"github.com/moby/moby-core/volume"
 )
 
 var (

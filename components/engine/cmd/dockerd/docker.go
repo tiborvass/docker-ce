@@ -7,12 +7,12 @@ import (
 	"runtime"
 
 	"github.com/Sirupsen/logrus"
-	"github.com/docker/docker/cli"
-	cliflags "github.com/docker/docker/cli/flags"
-	"github.com/docker/docker/daemon/config"
-	"github.com/docker/docker/dockerversion"
-	"github.com/docker/docker/pkg/reexec"
-	"github.com/docker/docker/pkg/term"
+	"github.com/moby/moby-core/cli"
+	cliflags "github.com/moby/moby-core/cli/flags"
+	"github.com/moby/moby-core/daemon/config"
+	"github.com/moby/moby-core/dockerversion"
+	"github.com/moby/moby-core/pkg/reexec"
+	"github.com/moby/moby-core/pkg/term"
 	"github.com/spf13/cobra"
 	"github.com/spf13/pflag"
 )

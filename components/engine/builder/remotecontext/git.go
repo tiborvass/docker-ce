@@ -3,9 +3,9 @@ package remotecontext
 import (
 	"os"
 
-	"github.com/docker/docker/builder"
-	"github.com/docker/docker/pkg/archive"
-	"github.com/docker/docker/pkg/gitutils"
+	"github.com/moby/moby-core/builder"
+	"github.com/moby/moby-core/pkg/archive"
+	"github.com/moby/moby-core/pkg/gitutils"
 )
 
 // MakeGitContext returns a Context from gitURL that is cloned in a temporary directory.

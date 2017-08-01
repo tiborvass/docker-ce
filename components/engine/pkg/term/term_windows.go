@@ -8,7 +8,7 @@ import (
 	"os/signal"
 
 	"github.com/Azure/go-ansiterm/winterm"
-	"github.com/docker/docker/pkg/term/windows"
+	"github.com/moby/moby-core/pkg/term/windows"
 	"golang.org/x/sys/windows"
 )
 

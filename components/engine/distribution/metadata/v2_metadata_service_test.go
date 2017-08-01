@@ -8,7 +8,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/docker/docker/layer"
+	"github.com/moby/moby-core/layer"
 	"github.com/opencontainers/go-digest"
 )
 

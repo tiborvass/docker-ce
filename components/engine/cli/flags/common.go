@@ -6,9 +6,9 @@ import (
 	"path/filepath"
 
 	"github.com/Sirupsen/logrus"
-	"github.com/docker/docker/cli"
-	"github.com/docker/docker/opts"
 	"github.com/docker/go-connections/tlsconfig"
+	"github.com/moby/moby-core/cli"
+	"github.com/moby/moby-core/opts"
 	"github.com/spf13/pflag"
 )
 

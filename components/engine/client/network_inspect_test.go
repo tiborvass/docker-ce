@@ -9,8 +9,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/docker/docker/api/types"
-	"github.com/docker/docker/api/types/network"
+	"github.com/moby/moby-core/api/types"
+	"github.com/moby/moby-core/api/types/network"
 	"golang.org/x/net/context"
 )
 

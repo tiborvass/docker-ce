@@ -8,11 +8,11 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/docker/docker/integration-cli/checker"
-	"github.com/docker/docker/integration-cli/cli"
-	"github.com/docker/docker/integration-cli/daemon"
-	icmd "github.com/docker/docker/pkg/testutil/cmd"
 	"github.com/go-check/check"
+	"github.com/moby/moby-core/integration-cli/checker"
+	"github.com/moby/moby-core/integration-cli/cli"
+	"github.com/moby/moby-core/integration-cli/daemon"
+	icmd "github.com/moby/moby-core/pkg/testutil/cmd"
 )
 
 var (
@@ -291,7 +291,7 @@ func (s *DockerSuite) TestPluginInspect(c *check.C) {
 	c.Assert(err, checker.NotNil)
 }
 
-// Test case for https://github.com/docker/docker/pull/29186#discussion_r91277345
+// Test case for https://github.com/moby/moby-core/pull/29186#discussion_r91277345
 func (s *DockerSuite) TestPluginInspectOnWindows(c *check.C) {
 	// This test should work on Windows only
 	testRequires(c, DaemonIsWindows)

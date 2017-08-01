@@ -4,11 +4,11 @@ import (
 	"fmt"
 
 	"github.com/docker/distribution/reference"
-	"github.com/docker/docker/api/types/backend"
-	"github.com/docker/docker/builder"
-	"github.com/docker/docker/builder/dockerfile"
-	"github.com/docker/docker/image"
-	"github.com/docker/docker/pkg/stringid"
+	"github.com/moby/moby-core/api/types/backend"
+	"github.com/moby/moby-core/builder"
+	"github.com/moby/moby-core/builder/dockerfile"
+	"github.com/moby/moby-core/image"
+	"github.com/moby/moby-core/pkg/stringid"
 	"github.com/pkg/errors"
 	"golang.org/x/net/context"
 )

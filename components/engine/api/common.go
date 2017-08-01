@@ -12,10 +12,10 @@ import (
 	"strings"
 
 	"github.com/Sirupsen/logrus"
-	"github.com/docker/docker/api/types"
-	"github.com/docker/docker/pkg/ioutils"
-	"github.com/docker/docker/pkg/system"
 	"github.com/docker/libtrust"
+	"github.com/moby/moby-core/api/types"
+	"github.com/moby/moby-core/pkg/ioutils"
+	"github.com/moby/moby-core/pkg/system"
 )
 
 // Common constants for daemon and client.

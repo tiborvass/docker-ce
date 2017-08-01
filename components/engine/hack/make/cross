@@ -31,7 +31,7 @@ for platform in $DOCKER_CROSSPLATFORMS; do
 
 			# go install docker/docker/pkg packages to ensure that
 			# they build cross platform.
-			go install github.com/docker/docker/pkg/...
+			go install github.com/moby/moby-core/pkg/...
 
 			if [ -n "${daemonSupporting[$platform]}" ]; then
 				# Since tgz relies on the paths created by mkdir

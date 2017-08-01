@@ -2,7 +2,7 @@ package dockerfile
 
 import (
 	"fmt"
-	"github.com/docker/docker/runconfig/opts"
+	"github.com/moby/moby-core/runconfig/opts"
 	"io"
 )
 

@@ -11,7 +11,7 @@ import (
 	"syscall"
 
 	"github.com/Sirupsen/logrus"
-	"github.com/docker/docker/pkg/system"
+	"github.com/moby/moby-core/pkg/system"
 	"github.com/pkg/errors"
 )
 

@@ -9,10 +9,10 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/docker/docker/api/types/swarm"
-	"github.com/docker/docker/integration-cli/checker"
-	"github.com/docker/docker/integration-cli/daemon"
 	"github.com/go-check/check"
+	"github.com/moby/moby-core/api/types/swarm"
+	"github.com/moby/moby-core/integration-cli/checker"
+	"github.com/moby/moby-core/integration-cli/daemon"
 )
 
 func setPortConfig(portConfig []swarm.PortConfig) daemon.ServiceConstructor {

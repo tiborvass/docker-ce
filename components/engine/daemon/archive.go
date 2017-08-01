@@ -6,14 +6,14 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/docker/docker/api/types"
-	"github.com/docker/docker/container"
-	"github.com/docker/docker/pkg/archive"
-	"github.com/docker/docker/pkg/chrootarchive"
-	"github.com/docker/docker/pkg/idtools"
-	"github.com/docker/docker/pkg/ioutils"
-	"github.com/docker/docker/pkg/symlink"
-	"github.com/docker/docker/pkg/system"
+	"github.com/moby/moby-core/api/types"
+	"github.com/moby/moby-core/container"
+	"github.com/moby/moby-core/pkg/archive"
+	"github.com/moby/moby-core/pkg/chrootarchive"
+	"github.com/moby/moby-core/pkg/idtools"
+	"github.com/moby/moby-core/pkg/ioutils"
+	"github.com/moby/moby-core/pkg/symlink"
+	"github.com/moby/moby-core/pkg/system"
 	"github.com/pkg/errors"
 )
 

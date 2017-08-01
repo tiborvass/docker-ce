@@ -7,7 +7,7 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/docker/docker/pkg/jsonmessage"
+	"github.com/moby/moby-core/pkg/jsonmessage"
 )
 
 var (

@@ -8,8 +8,8 @@ import (
 	"io/ioutil"
 	"regexp"
 
-	"github.com/docker/docker/builder"
-	"github.com/docker/docker/pkg/httputils"
+	"github.com/moby/moby-core/builder"
+	"github.com/moby/moby-core/pkg/httputils"
 )
 
 // When downloading remote contexts, limit the amount (in bytes)

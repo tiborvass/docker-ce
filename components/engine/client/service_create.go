@@ -5,9 +5,9 @@ import (
 	"fmt"
 
 	"github.com/docker/distribution/reference"
-	"github.com/docker/docker/api/types"
-	registrytypes "github.com/docker/docker/api/types/registry"
-	"github.com/docker/docker/api/types/swarm"
+	"github.com/moby/moby-core/api/types"
+	registrytypes "github.com/moby/moby-core/api/types/registry"
+	"github.com/moby/moby-core/api/types/swarm"
 	"github.com/opencontainers/go-digest"
 	"golang.org/x/net/context"
 )

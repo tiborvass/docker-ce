@@ -9,8 +9,8 @@ import (
 	"path/filepath"
 	"syscall"
 
-	"github.com/docker/docker/libcontainerd"
-	"github.com/docker/docker/pkg/system"
+	"github.com/moby/moby-core/libcontainerd"
+	"github.com/moby/moby-core/pkg/system"
 )
 
 const defaultDaemonConfigFile = ""

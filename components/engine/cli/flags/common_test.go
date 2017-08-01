@@ -4,7 +4,7 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/docker/docker/cli"
+	"github.com/moby/moby-core/cli"
 	"github.com/spf13/pflag"
 	"github.com/stretchr/testify/assert"
 )

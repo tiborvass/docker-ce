@@ -11,12 +11,12 @@ import (
 	"strings"
 	"time"
 
-	dcli "github.com/docker/docker/cli"
-	"github.com/docker/docker/integration-cli/checker"
-	"github.com/docker/docker/integration-cli/cli"
-	icmd "github.com/docker/docker/pkg/testutil/cmd"
 	"github.com/docker/go-connections/tlsconfig"
 	"github.com/go-check/check"
+	dcli "github.com/moby/moby-core/cli"
+	"github.com/moby/moby-core/integration-cli/checker"
+	"github.com/moby/moby-core/integration-cli/cli"
+	icmd "github.com/moby/moby-core/pkg/testutil/cmd"
 )
 
 var notaryBinary = "notary"

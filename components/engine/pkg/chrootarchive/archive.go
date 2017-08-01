@@ -7,8 +7,8 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/docker/docker/pkg/archive"
-	"github.com/docker/docker/pkg/idtools"
+	"github.com/moby/moby-core/pkg/archive"
+	"github.com/moby/moby-core/pkg/idtools"
 )
 
 var chrootArchiver = &archive.Archiver{Untar: Untar}

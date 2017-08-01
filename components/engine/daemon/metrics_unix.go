@@ -10,10 +10,10 @@ import (
 	"syscall"
 
 	"github.com/Sirupsen/logrus"
-	"github.com/docker/docker/pkg/mount"
-	"github.com/docker/docker/pkg/plugingetter"
-	"github.com/docker/docker/pkg/plugins"
 	metrics "github.com/docker/go-metrics"
+	"github.com/moby/moby-core/pkg/mount"
+	"github.com/moby/moby-core/pkg/plugingetter"
+	"github.com/moby/moby-core/pkg/plugins"
 	"github.com/pkg/errors"
 )
 

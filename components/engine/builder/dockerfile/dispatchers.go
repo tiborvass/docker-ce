@@ -18,14 +18,14 @@ import (
 	"time"
 
 	"github.com/Sirupsen/logrus"
-	"github.com/docker/docker/api"
-	"github.com/docker/docker/api/types"
-	"github.com/docker/docker/api/types/container"
-	"github.com/docker/docker/api/types/strslice"
-	"github.com/docker/docker/builder"
-	"github.com/docker/docker/builder/dockerfile/parser"
-	"github.com/docker/docker/pkg/signal"
 	"github.com/docker/go-connections/nat"
+	"github.com/moby/moby-core/api"
+	"github.com/moby/moby-core/api/types"
+	"github.com/moby/moby-core/api/types/container"
+	"github.com/moby/moby-core/api/types/strslice"
+	"github.com/moby/moby-core/builder"
+	"github.com/moby/moby-core/builder/dockerfile/parser"
+	"github.com/moby/moby-core/pkg/signal"
 	"github.com/pkg/errors"
 )
 
