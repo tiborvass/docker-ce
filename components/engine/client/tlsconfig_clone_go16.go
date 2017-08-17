@@ -1,12 +1,12 @@
 // +build go1.6,!go1.7
 
-package tlsconfig
+package client
 
 import "crypto/tls"
 
-// Clone returns a clone of tls.Config. This function is provided for
+// cloneTLSConfig returns a clone of tls.Config. This function is provided for
 // compatibility for go1.6 that doesn't include this method in stdlib.
-func Clone(c *tls.Config) *tls.Config {
+func cloneTLSConfig(c *tls.Config) *tls.Config {
 	return &tls.Config{
 		Rand:                     c.Rand,
 		Time:                     c.Time,

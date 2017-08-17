@@ -13,7 +13,6 @@ import (
 
 	"github.com/docker/go-connections/sockets"
 	"github.com/moby/moby-core/api/types"
-	"github.com/moby/moby-core/pkg/tlsconfig"
 	"golang.org/x/net/context"
 )
 
@@ -139,7 +138,7 @@ func tlsDialWithDialer(dialer *net.Dialer, network, addr string, config *tls.Con
 	// from the hostname we're connecting to.
 	if config.ServerName == "" {
 		// Make a copy to avoid polluting argument or default.
-		config = tlsconfig.Clone(config)
+		config = cloneTLSConfig(config)
 		config.ServerName = hostname
 	}
 
